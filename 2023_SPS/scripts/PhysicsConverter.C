@@ -253,7 +253,7 @@ void PhysicsConverter(const string run, const string inputPath, const string cal
   h_ped_C2->Write();
   h_ped_C3->Write();
   Outfile->cd();  
-  ftree->Write();
+  ftree->Write("",TObject::kOverwrite);
   Outfile->Close();
 
 }
